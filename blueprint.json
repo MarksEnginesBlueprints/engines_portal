@@ -15,12 +15,60 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "timestamp": "2018-04-30T18:36:53+10:00"
   },
   "software": {
     "base": {
+      "name": "eportal",
+      "framework": "sinatra",
       "deployment_type": "web",
-      "http_protocol": "https_and_http"
-    }
+      "http_protocol": "https_and_http",
+      "continuous_deployment": true,
+      "memory": {
+        "required": 96,
+        "recommended": 128
+      }
+    },
+    "installed_packages": [
+      {
+        "name": "engines_portal",
+        "source_url": "https://github.com/lachdoug/engines_portal.git",
+        "destination": "./",
+        "extraction_command": "git",
+        "path_to_extracted": "engines_portal"
+      }
+    ],
+    "service_configurations": [
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "filesystem/local/filesystem",
+        "variables": {
+          "service_name": "public",
+          "volume_src": "",
+          "engine_path": "",
+          "permissions": "ro",
+          "user": "_Engines_Builder(data_uid)",
+          "group": "_Engines_Builder(data_gid)"
+        }
+      }
+    ],
+    "environment_variables": [
+      {
+        "name": "ENGINES_USER_PORTAL_SYSTEM_IP",
+        "mandatory": true,
+        "ask_at_build_time": true,
+        "input": {
+          "type": "string",
+          "label": "Engines Host"
+        }
+      }
+    ],
+    "persistent_directories": [
+      {
+        "path": "app/public",
+        "volume_name": "public"
+      }
+    ]
   }
 }
