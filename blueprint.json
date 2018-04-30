@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-04-30T18:36:53+10:00"
+    "timestamp": "2018-04-30T18:42:45+10:00"
   },
   "software": {
     "base": {
@@ -28,6 +28,12 @@
       "memory": {
         "required": 96,
         "recommended": 128
+      }
+    },
+    "scripts": {
+      "install": {
+        "language": "sh",
+        "content": "#!/bin/bash\r\n\r\nmkdir /home/app/public\r\ntouch   /home/app/public/r"
       }
     },
     "installed_packages": [
