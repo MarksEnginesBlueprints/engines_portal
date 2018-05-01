@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-04-30T18:42:45+10:00"
+    "timestamp": "2018-05-01T11:36:01+10:00"
   },
   "software": {
     "base": {
@@ -24,6 +24,7 @@
       "framework": "sinatra",
       "deployment_type": "web",
       "http_protocol": "https_and_http",
+      "framework_port_override": 3000,
       "continuous_deployment": true,
       "memory": {
         "required": 96,
@@ -31,6 +32,10 @@
       }
     },
     "scripts": {
+      "start": {
+        "language": "sh",
+        "content": "#!/bin/bash\r\n\r\ncd /home/app\r\ngit pull\r\nbundle --standalone\r\nbundle exec thin start"
+      },
       "install": {
         "language": "sh",
         "content": "#!/bin/bash\r\n\r\nmkdir /home/app/public\r\ntouch   /home/app/public/r"
