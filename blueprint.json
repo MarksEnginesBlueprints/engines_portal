@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-01T11:51:53+10:00"
+    "timestamp": "2018-05-01T12:23:47+10:00"
   },
   "software": {
     "base": {
@@ -72,6 +72,13 @@
         "input": {
           "type": "string",
           "label": "Engines Host"
+        }
+      },
+      {
+        "name": "RACK_ENV",
+        "value": "production",
+        "input": {
+          "type": "boolean"
         }
       }
     ],
