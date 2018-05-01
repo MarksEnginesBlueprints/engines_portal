@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-01T11:36:01+10:00"
+    "timestamp": "2018-05-01T11:51:53+10:00"
   },
   "software": {
     "base": {
@@ -73,6 +73,12 @@
           "type": "string",
           "label": "Engines Host"
         }
+      }
+    ],
+    "file_write_permissions": [
+      {
+        "path": "/home/app",
+        "recursive": true
       }
     ],
     "persistent_directories": [
