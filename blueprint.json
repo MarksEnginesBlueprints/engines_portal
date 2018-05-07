@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-08T09:35:03+10:00"
+    "timestamp": "2018-05-08T09:46:26+10:00"
   },
   "software": {
     "base": {
@@ -79,11 +79,12 @@
     "environment_variables": [
       {
         "name": "ENGINES_USER_PORTAL_SYSTEM_IP",
+        "value": "172.17.0.1",
         "mandatory": true,
         "ask_at_build_time": true,
         "input": {
           "type": "string",
-          "label": "Engines Host"
+          "label": "Engines System"
         }
       },
       {
