@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-01T12:23:47+10:00"
+    "timestamp": "2018-05-08T09:24:17+10:00"
   },
   "software": {
     "base": {
@@ -62,6 +62,18 @@
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)"
         }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "database/sql/mysql",
+        "variables": {
+          "database_name": "_Engines_Builder(engine_name)",
+          "database_host": "_Engines_System(mysql_host)",
+          "db_username": "_Engines_Builder(engine_name) ",
+          "db_password": "_Engines_System(random(10))",
+          "collation": "utf8_general_ci",
+          "full_access": "false"
+        }
       }
     ],
     "environment_variables": [
@@ -80,6 +92,12 @@
         "input": {
           "type": "boolean"
         }
+      }
+    ],
+    "template_files": [
+      {
+        "path": "app/config/mail.yml",
+        "content": "production:\r\n  email_delivery:\r\n  delivery_method: smtp\r\n  smtp_settings:\r\n   address: _Engines_System(smtp_host)\r\n   port: 25\r\n   domain: _Engines_System(default_domain)\r\n   enable_starttls_auto : false\r\n   attachments_storage_path: /tmp\r\n"
       }
     ],
     "file_write_permissions": [
