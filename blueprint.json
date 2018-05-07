@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-08T09:30:21+10:00"
+    "timestamp": "2018-05-08T09:35:03+10:00"
   },
   "software": {
     "base": {
@@ -92,6 +92,13 @@
         "input": {
           "type": "boolean"
         }
+      },
+      {
+        "name": "ENGINES_USER_PORTAL_USER_INACTIVITY_TIMEOUT",
+        "value": "30",
+        "input": {
+          "type": "integer"
+        }
       }
     ],
     "template_files": [
@@ -111,6 +118,14 @@
         "path": "app/data",
         "volume_name": "data"
       }
-    ]
+    ],
+    "framework_specific": {
+      "rake_tasks": [
+        {
+          "action": "db:migrate",
+          "always_run": true
+        }
+      ]
+    }
   }
 }
