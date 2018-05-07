@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-08T09:24:17+10:00"
+    "timestamp": "2018-05-08T09:30:21+10:00"
   },
   "software": {
     "base": {
@@ -55,7 +55,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "service_name": "public",
+          "service_name": "data",
           "volume_src": "",
           "engine_path": "",
           "permissions": "ro",
@@ -108,8 +108,8 @@
     ],
     "persistent_directories": [
       {
-        "path": "app/public",
-        "volume_name": "public"
+        "path": "app/data",
+        "volume_name": "data"
       }
     ]
   }
