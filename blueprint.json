@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-08T14:39:40+10:00"
+    "timestamp": "2018-05-09T09:09:28+10:00"
   },
   "software": {
     "base": {
@@ -58,7 +58,7 @@
           "service_name": "data",
           "volume_src": "",
           "engine_path": "",
-          "permissions": "ro",
+          "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)"
         }
