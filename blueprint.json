@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-05-08T13:11:52+10:00"
+    "timestamp": "2018-05-08T14:39:40+10:00"
   },
   "software": {
     "base": {
@@ -116,7 +116,7 @@
     ],
     "persistent_directories": [
       {
-        "path": "app/data",
+        "path": "/home/app/data",
         "volume_name": "data"
       }
     ],
