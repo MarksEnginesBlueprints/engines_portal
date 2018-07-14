@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-07-14T14:42:26+10:00"
+    "timestamp": "2018-07-14T14:44:49+10:00"
   },
   "software": {
     "base": {
@@ -34,7 +34,7 @@
     "scripts": {
       "start": {
         "language": "sh",
-        "content": "#!/bin/bash\r\n\r\ncd /home/app\r\ngit pull\r\nbundle --standalone\r\nbundle exec thin start"
+        "content": "#!/bin/bash\r\n\r\ncd /home/app\r\ngit checkout $branch\r\ngit pull\r\nbundle --standalone\r\nbundle exec thin start"
       },
       "install": {
         "language": "sh",
