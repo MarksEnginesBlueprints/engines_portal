@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-07-10T13:40:24+10:00"
+    "timestamp": "2018-07-14T12:42:55+10:00"
   },
   "software": {
     "base": {
@@ -44,6 +44,8 @@
     "installed_packages": [
       {
         "name": "engines_portal",
+        "download_type": "git",
+        "command_options": "--branch $branch",
         "source_url": "https://github.com/lachdoug/engines_portal.git",
         "destination": "./",
         "extraction_command": "git ",
@@ -99,6 +101,15 @@
         "value": "30",
         "input": {
           "type": "integer"
+        }
+      },
+      {
+        "name": "branch",
+        "value": "master",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "string"
         }
       }
     ],
