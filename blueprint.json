@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-07-14T12:42:55+10:00"
+    "timestamp": "2018-07-14T14:42:26+10:00"
   },
   "software": {
     "base": {
@@ -45,7 +45,6 @@
       {
         "name": "engines_portal",
         "download_type": "git",
-        "command_options": "--branch $branch",
         "source_url": "https://github.com/lachdoug/engines_portal.git",
         "destination": "./",
         "extraction_command": "git ",
