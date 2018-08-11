@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-08-11T17:57:26+10:00"
+    "timestamp": "2018-08-11T18:06:32+10:00"
   },
   "software": {
     "base": {
@@ -118,8 +118,14 @@
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
-          "type": "checkboxes",
-          "label": "disable Captcha"
+          "type": "checkbox",
+          "label": "disable Captcha",
+          "collection": {
+            "items": {
+              "false": "false",
+              "true": "true"
+            }
+          }
         }
       },
       {
@@ -129,8 +135,14 @@
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
-          "type": "checkboxes",
-          "label": "disable Admin functions"
+          "type": "checkbox",
+          "label": "disable Admin functions",
+          "collection": {
+            "items": {
+              "false": "false",
+              "true": "true"
+            }
+          }
         }
       }
     ],
