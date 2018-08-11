@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-08-11T17:49:49+10:00"
+    "timestamp": "2018-08-11T17:52:42+10:00"
   },
   "software": {
     "base": {
@@ -117,7 +117,7 @@
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
-          "type": "boolean",
+          "type": "checkboxes",
           "label": "disable Captcha"
         }
       },
@@ -127,7 +127,7 @@
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
-          "type": "boolean",
+          "type": "checkboxes",
           "label": "disable Admin functions"
         }
       }
