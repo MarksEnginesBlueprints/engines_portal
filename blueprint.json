@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-08-11T17:24:11+10:00"
+    "timestamp": "2018-08-11T17:34:02+10:00"
   },
   "software": {
     "base": {
@@ -114,7 +114,6 @@
       {
         "name": "ENGINES_USER_PORTAL_DISABLE_CAPTCHA",
         "value": "false",
-        "mandatory": true,
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
@@ -125,7 +124,6 @@
       {
         "name": "ENGINES_USER_PORTAL_DISABLE_ADMIN",
         "value": "false",
-        "mandatory": true,
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
