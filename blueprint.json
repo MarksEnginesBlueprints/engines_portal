@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-07-14T14:44:49+10:00"
+    "timestamp": "2018-08-11T17:22:07+10:00"
   },
   "software": {
     "base": {
@@ -109,6 +109,26 @@
         "immutable": true,
         "input": {
           "type": "string"
+        }
+      },
+      {
+        "name": "ENGINES_USER_PORTAL_DISABLE_CAPTCHA",
+        "value": "false",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "boolean",
+          "label": "Use Captcha"
+        }
+      },
+      {
+        "name": "ENGINES_USER_PORTAL_DISABLE_ADMIN",
+        "value": "false",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "boolean",
+          "label": "Provide Admin functions"
         }
       }
     ],
