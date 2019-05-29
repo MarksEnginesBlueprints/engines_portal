@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-08-11T18:06:32+10:00"
+    "timestamp": "2019-05-29T12:35:21+10:00"
   },
   "software": {
     "base": {
@@ -61,7 +61,8 @@
           "engine_path": "",
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
-          "group": "_Engines_Builder(data_gid)"
+          "group": "_Engines_Builder(data_gid)",
+          "fw_user": "_Engines_Builder(cont_user_id)"
         }
       },
       {
@@ -118,14 +119,8 @@
         "immutable": true,
         "ask_at_build_time": true,
         "input": {
-          "type": "checkbox",
-          "label": "disable Captcha",
-          "collection": {
-            "items": {
-              "false": "false",
-              "true": "true"
-            }
-          }
+          "type": "checkbox_boolean",
+          "label": "disable Captcha"
         }
       },
       {
@@ -136,13 +131,7 @@
         "ask_at_build_time": true,
         "input": {
           "type": "checkbox",
-          "label": "disable Admin functions",
-          "collection": {
-            "items": {
-              "false": "false",
-              "true": "true"
-            }
-          }
+          "label": "disable Admin functions"
         }
       }
     ],
