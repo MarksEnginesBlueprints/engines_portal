@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-05-29T12:55:00+10:00"
+    "timestamp": "2019-05-29T13:06:49+10:00"
   },
   "software": {
     "base": {
@@ -41,6 +41,11 @@
         "content": "#!/bin/bash\r\n\r\nmkdir /home/app/public\r\ntouch   /home/app/public/r"
       }
     },
+    "system_packages": [
+      {
+        "package": "libmagickwand-dev"
+      }
+    ],
     "installed_packages": [
       {
         "name": "engines_portal",
