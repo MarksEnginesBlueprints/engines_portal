@@ -16,14 +16,14 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-05-29T12:53:07+10:00"
+    "timestamp": "2019-05-29T12:55:00+10:00"
   },
   "software": {
     "base": {
       "name": "eportal",
       "framework": "sinatra",
       "deployment_type": "web",
-      "http_protocol": "https_and_http",
+      "http_protocol": "https_only",
       "framework_port_override": 3000,
       "continuous_deployment": true,
       "memory": {
