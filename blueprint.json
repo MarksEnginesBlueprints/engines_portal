@@ -16,7 +16,13 @@
         "patch": 0
       }
     },
-    "timestamp": "2019-05-29T13:06:49+10:00"
+    "software": {
+      "display": {
+        "title": "eportal",
+        "label": "eportal"
+      }
+    },
+    "timestamp": "2019-05-29T13:17:58+10:00"
   },
   "software": {
     "base": {
