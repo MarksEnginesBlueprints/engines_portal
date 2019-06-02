@@ -22,7 +22,7 @@
         "label": "eportal"
       }
     },
-    "timestamp": "2019-05-29T13:17:58+10:00"
+    "timestamp": "2019-06-03T09:47:19+10:00"
   },
   "software": {
     "base": {
@@ -50,6 +50,9 @@
     "system_packages": [
       {
         "package": "libmagickwand-dev"
+      },
+      {
+        "package": "fonts-freefont-ttf"
       }
     ],
     "installed_packages": [
