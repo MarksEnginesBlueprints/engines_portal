@@ -22,7 +22,7 @@
         "label": "eportal"
       }
     },
-    "timestamp": "2019-06-03T09:47:19+10:00"
+    "timestamp": "2019-09-10T19:02:35+10:00"
   },
   "software": {
     "base": {
@@ -76,7 +76,8 @@
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)",
-          "fw_user": "_Engines_Builder(cont_user_id)"
+          "fw_user": "_Engines_Builder(cont_user_id)",
+          "exclude_from_backup": "false"
         }
       },
       {
